@@ -1,7 +1,17 @@
 body,
 html {
-  background: rgb(20, 20, 20);
+  height: 100%;
+  height: 100vw;
   min-height: 100%;
+  width: 100%;
+  background-position: center top;
+  background-image: url("./img/Asset.svg") no-repeat;
+}
+.container-fluid {
+  overflow-x: hidden;
+}
+section:nth-last-child(2) {
+  background-color: #202226;
 }
 
 .svg {
@@ -10,94 +20,57 @@ html {
   margin: 0 auto;
 }
 
-.svg-container {
-  margin-top: -30%;
+.spinner {
+  margin-top: -25%;
 }
 
-/* // ROCKET */
-
-#js-rocket {
+.projectCardLeft {
   display: flex;
-  margin: 4rem;
 }
 
-#js-rocket svg {
-  margin: auto;
+.projectCardRight {
+  display: flex;
 }
 
-#particles ellipse {
-  will-change: transform;
-  animation: vibrate 0.3s infinite;
-}
-
-#js-rocket #flame {
-  will-change: transform;
-  animation: flicker 0.1s infinite;
-}
-
-#js-rocket #speed rect {
-  will-change: transform;
-}
-
-#js-rocket #speed rect:first-of-type {
-  animation: translateSpeed 9s infinite;
-  animation-delay: 5s;
-}
-
-#js-rocket #speed rect:nth-child(2) {
-  animation: translateSpeed infinite;
-  animation-duration: 9s;
-}
-
-#js-rocket #speed rect:nth-child(3) {
-  animation: translateSpeed infinite;
-  animation-delay: 6s;
-  animation-duration: 9s;
-}
-
-#js-rocket #speed rect:nth-child(4) {
-  animation: translateSpeed infinite;
-  animation-duration: 7s;
-  animation-delay: 5s;
-}
-
-#js-rocket #speed rect:nth-child(5) {
-  animation: translateSpeed infinite;
-  animation-duration: 6s;
-  animation-delay: 5s;
-}
-
-@keyframes vibrate {
-  0% {
-    transform: translateX(-0.2%);
-  }
-
-  50% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-0.2%);
+@media (max-width: 759px) {
+  .card {
+    margin: 0 auto;
   }
 }
 
-@keyframes flicker {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.8;
-  }
+.container-fluid {
+  padding: 0px !important;
 }
 
-@keyframes translateSpeed {
-  0% {
-    transform: translateY(-100%);
-    opacity: 1;
-  }
+.fill {
+  min-height: 100%;
+  height: 100%;
+}
 
-  100% {
-    transform: translateY(200%);
-    opacity: 0;
-  }
+article {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  transform: translate(0, -50%);
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Pattern styles */
+.container {
+  display: grid;
+}
+
+.left-half {
+  background: #ff9e2c;
+  grid-column: 1;
+}
+
+.right-half {
+  background: #b6701e;
+  grid-column: 2;
 }

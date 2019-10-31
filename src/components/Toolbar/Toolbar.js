@@ -1,17 +1,47 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton.js";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+
 import "./Toolbar.css";
 
 function Toolbar(props) {
-  return (
-    <header className="toolbar">
-      <nav className="toolbarNav">
-        <div className="toolbarToggleButton">
-          <DrawerToggleButton click={props.drawerClickHandler} />
-        </div>
+  const [NavColor, setNavColor] = useState(false);
 
+  const blackNav = {
+    backgroundColor: "#202226",
+    border: "none",
+    transition: "background-color .3s linear",
+    paddingTop: "55px"
+  };
+  const whiteNav = {
+    color: "black",
+    backgroundColor: "white",
+    transition: "background-color .3s linear"
+  };
+
+  useScrollPosition(({ prevPos, currPos }) => {
+    if (currPos.y < -95) {
+      setNavColor(true);
+    } else if (currPos.y > -55) {
+      setNavColor(false);
+    }
+  });
+
+  const blackText = {
+    color: "black"
+  };
+
+  const whiteText = {
+    color: "white"
+  };
+
+  return (
+    <header style={NavColor ? whiteNav : blackNav} className="toolbar">
+      <nav className="toolbarNav">
         <div className="toolbarLogo">
-          <a href="/"> </a>
+          <a style={NavColor ? blackText : whiteText} href="/">
+            SGK
+          </a>
         </div>
         <div className="spacer"></div>
 
@@ -24,6 +54,9 @@ function Toolbar(props) {
               <a href="/"></a>
             </li>
           </ul>
+        </div>
+        <div className="toolbarToggleButton">
+          <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
       </nav>
     </header>

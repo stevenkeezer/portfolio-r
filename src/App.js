@@ -4,14 +4,16 @@ import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import ScrollAnimation from "react-animate-on-scroll";
 import "bootstrap/dist/css/bootstrap.min.css";
-import night from "../src/img/night.png";
-import SpaceShip from "./components/SpaceShip.js";
+import ProjectCard from "./components/ProjectCard";
+import ProjectCardRight from "./components/ProjectCardRight";
+import CardColumn from "./components/CardColumn";
 import Spinner from "./components/Spinner";
+import Projects from "./components/Projects/Projects";
+import MainFooter from "./components/Footer/MainFooter";
 import { Container } from "react-bootstrap";
-import twitter from "./img/twitter.png";
-import github from "./img/github.png";
-import fb from "./img/fb.png";
-
+import Headroom from "react-headroom";
+import { AnimatedBg, Transition } from "scroll-background";
+import Introduction from "./components/Introduction/Introduction";
 import "./App.css";
 
 function App() {
@@ -26,46 +28,35 @@ function App() {
   };
 
   return (
-    <Container
-      fluid
-      style={{
-        height: "100vw",
-        backgroundImage: `url(${night})`,
-        minHeight: "500vw"
-      }}
-      className="main-container"
-    >
-      <Toolbar drawerClickHandler={drawerToggleClickHandler} />
+    <Container fluid className="main-container">
+      <Headroom>
+        <Toolbar drawerClickHandler={drawerToggleClickHandler} />
+      </Headroom>
       <SideDrawer show={sideDrawerOpen} />
       {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
 
-      <main style={{ marginTop: "64px" }}>
-        <Spinner />
-        <ScrollAnimation animateIn="slideInUp">
-          <SpaceShip />
-        </ScrollAnimation>{" "}
-        <ScrollAnimation animateIn="fadeInLeft" animateOnce="false">
-          <img
-            alt="hey"
-            style={{ width: "44px", marginLeft: "-11px" }}
-            src={twitter}
-          ></img>
-        </ScrollAnimation>{" "}
-        <ScrollAnimation animateIn="fadeInRight" animateOnce="false">
-          <img
-            style={{ width: "48px", marginLeft: "-12px" }}
-            alt="hey"
-            src={github}
-          ></img>
-        </ScrollAnimation>{" "}
-        <ScrollAnimation animateIn="fadeInLeft" animateOnce="false">
-          <img
-            alt="hey"
-            style={{ width: "34px", marginLeft: "-5px" }}
-            src={fb}
-          ></img>
-        </ScrollAnimation>{" "}
-      </main>
+      <AnimatedBg>
+        <div style={{ height: "120px" }} />
+        <Introduction />
+        <Transition height="100px" from="#202226" to="#fff" />
+        <section>
+          <Projects />
+        </section>
+        <section>
+          <CardColumn />
+        </section>
+        <section>
+          <ScrollAnimation animateIn="fadeInLeft">
+            <ProjectCardRight />
+          </ScrollAnimation>{" "}
+        </section>
+
+        <section>
+          <h1>Looking to start a project? Let's talk</h1>
+
+          <MainFooter />
+        </section>
+      </AnimatedBg>
     </Container>
   );
 }
