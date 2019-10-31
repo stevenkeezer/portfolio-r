@@ -1,7 +1,7 @@
 import React from "react";
-import movie from "/Users/stevenkeezer/Documents/Sierra/portfolio-r/src/img/movieApp.png";
-import twitter from "/Users/stevenkeezer/Documents/Sierra/portfolio-r/src/img/twitterApp.png";
-import weather from "/Users/stevenkeezer/Documents/Sierra/portfolio-r/src/img/weatherApp.png";
+import movie from "./movieApp.png";
+import twitter from "./twitterApp.png";
+import weather from "./weatherApp.png";
 import "./Projects.css";
 
 export default function Projects() {
