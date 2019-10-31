@@ -36,7 +36,7 @@ function App() {
       {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
 
       <AnimatedBg>
-        <div style={{ height: "120px" }} />
+        <div style={{ height: "52px" }} />
         <Introduction />
         <Transition height="100px" from="#202226" to="#fff" />
         <section>
