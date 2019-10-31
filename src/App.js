@@ -36,11 +36,13 @@ function App() {
       {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
 
       <AnimatedBg>
-        <div style={{ height: "52px" }} />
+        <div style={{ height: "35px" }} />
         <Introduction />
-        <Transition height="100px" from="#202226" to="#fff" />
+        <Transition height="70px" from="#202226" to="#fff" />
         <section>
-          <Projects />
+          <ScrollAnimation animateOnce={true} animateIn="fadeInUp">
+            <Projects />
+          </ScrollAnimation>{" "}
         </section>
         <section>
           <CardColumn />
