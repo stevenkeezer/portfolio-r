@@ -8,7 +8,7 @@ export default function CardColumn() {
         <div class="col-md-6">
           <div class="card">
             <div class="card-block">
-              <img src="https://picsum.photos/580/651"></img>
+              <img src="https://picsum.photos/580/650"></img>
               <h1 class="card-text good-review-score float-left">8.0</h1>
               <h4 class="card-title">Card on the Left 1</h4>
               <p class="card-text">
