@@ -1,0 +1,23 @@
+.description {
+  height: 100%;
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+}
+
+.desc-container {
+  margin-top: 200px !important;
+  margin-bottom: 200px !important;
+}
+
+.service-images {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  padding-top: 0px !important;
+}

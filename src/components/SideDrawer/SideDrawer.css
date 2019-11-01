@@ -1,6 +1,6 @@
 .sideDrawer {
   height: 100%;
-  background-color: white;
+  background-color: black;
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -25,7 +25,7 @@
 }
 
 .sideDrawer a {
-  color: #521751;
+  color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
 }

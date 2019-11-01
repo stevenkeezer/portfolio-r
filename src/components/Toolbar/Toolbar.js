@@ -44,7 +44,6 @@ function Toolbar(props) {
           </a>
         </div>
         <div className="spacer"></div>
-
         <div className="toolbarItems">
           <ul>
             <li>
@@ -55,6 +54,7 @@ function Toolbar(props) {
             </li>
           </ul>
         </div>
+
         <div className="toolbarToggleButton">
           <DrawerToggleButton click={props.drawerClickHandler} />
         </div>

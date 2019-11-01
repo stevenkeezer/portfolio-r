@@ -12,11 +12,12 @@ function SideDrawer(props) {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="/">Products</a>
+          <a href="/">About</a>
         </li>
         <li>
           <a href="/">Users</a>
         </li>
+        <button>Get In Touch</button>
       </ul>
     </nav>
   );

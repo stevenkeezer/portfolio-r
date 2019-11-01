@@ -1,0 +1,25 @@
+.card {
+  border: none;
+  padding-bottom: 120px;
+}
+.card-container {
+  padding: 25px;
+}
+
+.card-block img:hover {
+  transition: transform 0.4s;
+  transform: scale(0.98);
+}
+
+.card-block img {
+  transition: transform 0.4s;
+}
+
+.text-left {
+  padding-top: 10px;
+  padding-left: 30px !important;
+}
+
+.card-text {
+  color: grey;
+}

@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import ScrollAnimation from "react-animate-on-scroll";
-import "bootstrap/dist/css/bootstrap.min.css";
-import ProjectCard from "./components/ProjectCard";
-import ProjectCardRight from "./components/ProjectCardRight";
-import CardColumn from "./components/CardColumn";
-import Spinner from "./components/Spinner";
+import Service from "./components/MService/Service";
+import ServiceImages from "./components/MService/ServiceImages";
+import CardColumn from "./components/CardColumns/CardColumn";
 import Projects from "./components/Projects/Projects";
 import MainFooter from "./components/Footer/MainFooter";
 import { Container } from "react-bootstrap";
@@ -36,9 +35,11 @@ function App() {
       {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
 
       <AnimatedBg>
-        <div style={{ height: "35px" }} />
-        <Introduction />
-        <Transition height="70px" from="#202226" to="#fff" />
+        <div style={{ height: "50px" }} />
+        <ScrollAnimation animateOnce={true} duration={5} animateIn="fadeIn">
+          <Introduction />
+        </ScrollAnimation>{" "}
+        <Transition height="110px" from="#202226" to="#fff" />
         <section>
           <ScrollAnimation animateOnce={true} animateIn="fadeInUp">
             <Projects />
@@ -48,14 +49,16 @@ function App() {
           <CardColumn />
         </section>
         <section>
-          <ScrollAnimation animateIn="fadeInLeft">
-            <ProjectCardRight />
-          </ScrollAnimation>{" "}
+          <div className="d-flex w-100">
+            <ScrollAnimation animateIn="fadeInLeft">
+              <Service />
+            </ScrollAnimation>{" "}
+            <ServiceImages />
+          </div>
         </section>
-
         <section>
-          <h1>Looking to start a project? Let's talk</h1>
-
+          <h1>Got Projects? Let's talk</h1>
+          <button>Contact Me</button>
           <MainFooter />
         </section>
       </AnimatedBg>

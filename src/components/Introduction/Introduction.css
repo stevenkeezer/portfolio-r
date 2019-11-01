@@ -1,5 +1,6 @@
 .grimIam {
-  padding: 2em 1.4em;
+  padding-top: 3.5em !important;
+  padding: 1em 1.5em;
   font: normal 40px/50px Arial, sans-serif;
   color: #999;
 }
@@ -164,7 +165,7 @@
   0% {
     top: 0px;
   }
-  20% {
+  33% {
     top: -50px;
   }
   40% {

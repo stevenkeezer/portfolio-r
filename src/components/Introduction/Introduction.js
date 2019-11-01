@@ -18,14 +18,15 @@ export default function Introduction() {
           Break
         </div>
       </b>
-      <p style={{ marginLeft: ".3%" }}>Stuff </p>
+      <p>Stuff </p>
       <br></br>
       <h1
         style={{
           color: "white",
           marginTop: "-68px",
           fontSize: "38px",
-          maxWidth: "700px"
+          maxWidth: "700px",
+          color: "#fff"
         }}
       >
         <br></br>

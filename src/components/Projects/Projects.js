@@ -1,6 +1,5 @@
 import React from "react";
 import movie from "./movieApp.png";
-import twitter from "./twitterApp.png";
 import weather from "./weatherApp.png";
 import "./Projects.css";
 
@@ -18,17 +17,17 @@ export default function Projects() {
     });
   }
   return (
-    <div style={{ maxWidth: "1250px" }} class="row mx-auto">
-      <div class="portfolio_item col-md-6">
+    <div style={{ maxWidth: "1250px", marginTop: "-74px" }} class="row mx-auto">
+      <div class="portfolio_item col-md-6 col-sm-6 p-2">
         <div class="container container-monitor">
-          <div class="screen monitor">
+          <div class="screen monitor img-fluid">
             <img alt="blah" width="100%" height="100%" src={weather}></img>
           </div>
         </div>
       </div>
-      <div class="portfolio_item col-md-6">
+      <div class="portfolio_item col-md-6 col-sm-6 p-2">
         <div class="container container-monitor">
-          <div class="screen monitor">
+          <div class="screen monitor img-fluid">
             <img alt="blah" width="100%" height="100%" src={movie}></img>
           </div>
         </div>
