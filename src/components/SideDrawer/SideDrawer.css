@@ -13,21 +13,22 @@
 }
 
 .sideDrawer ul {
-  height: 100%;
+  height: 55%;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 12%;
 }
 
 .sideDrawer li {
-  margin: 0.5rem 0;
+  margin: 0rem 0;
 }
 
 .sideDrawer a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
 }
 
 .sideDrawer a:hover,
@@ -39,6 +40,29 @@
   transform: translateX(0);
 }
 
+.sideDrawer button {
+  height: 13%;
+  width: 60%;
+  background-color: transparent;
+  color: white;
+  margin-top: 10%;
+}
+
+.sideDrawer p {
+  margin: 0px;
+  padding-top: 1px;
+  color: grey;
+}
+
+.sideDrawer .email {
+  margin-top: 39%;
+  padding-left: 12%;
+  font-size: 14px;
+}
+
+.sideDrawer .subDesc {
+  margin-top: 5%;
+}
 @media (min-width: 769px) {
   /* .sideDrawer {
     display: none;

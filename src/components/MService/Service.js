@@ -8,7 +8,7 @@ export default function Service() {
       <div
         style={{
           backgroundColor: "black",
-          height: "280vh",
+          height: "260vh",
           width: "50vw"
         }}
         className=""

@@ -4,12 +4,12 @@ import "./Introduction.css";
 export default function Introduction() {
   return (
     <div className="grimIam">
-      <p style={{ marginRight: "1%" }}>I </p>
+      <p style={{ marginRight: "1.2%", marginBottom: "0px" }}>I </p>
       <b>
         <div className="innerIam">
           Build
           <br />
-          Break
+          <div style={{ paddingRight: "1.2%", fontSize: "37px" }}>Break</div>
           <br />
           Make
           <br />
@@ -18,7 +18,7 @@ export default function Introduction() {
           Break
         </div>
       </b>
-      <p>Stuff </p>
+      <p className="pl-1 m-0">Stuff </p>
       <br></br>
       <h1
         style={{

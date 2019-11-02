@@ -178,3 +178,13 @@
     top: -200px;
   }
 }
+
+@media (max-width: 759px) {
+  .grimIam {
+    font-size: 30px;
+  }
+  .grimIam h1 {
+    font-size: 30px !important;
+    width: 320px !important;
+  }
+}

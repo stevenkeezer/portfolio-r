@@ -25,16 +25,7 @@ export default function CardColumn() {
             </div>
           </div>
           <div class="card w-100">
-            <div class="card-block">
-              <img class="img-fluid" width="600px" src={redBg}></img>
-              <h4 class="card-title text-left pl-4">UX/UI Design</h4>
-              <p class="card-text text-left pl-4">
-                Eye catching design for your front end.
-              </p>
-            </div>
-          </div>
-          <div class="card w-100">
-            <div class="card-block mx-auto">
+            <div class="card-block mx-auto mb-4">
               <h1
                 style={{ maxWidth: "600px", fontSize: "33px" }}
                 class="card-text-only text-left pl-4 "
@@ -42,6 +33,15 @@ export default function CardColumn() {
                 Improving the design and functionality of your product can
                 dramatically improve customer satisfaction and product value.
               </h1>
+            </div>
+          </div>
+          <div class="card w-100">
+            <div class="card-block">
+              <img class="img-fluid" width="600px" src={redBg}></img>
+              <h4 class="card-title text-left pl-4">UX/UI Design</h4>
+              <p class="card-text text-left pl-4">
+                Eye catching design for your front end.
+              </p>
             </div>
           </div>
         </div>

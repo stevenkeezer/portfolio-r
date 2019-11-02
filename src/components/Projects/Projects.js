@@ -1,6 +1,9 @@
 import React from "react";
 import movie from "./movieApp.png";
 import weather from "./weatherApp.png";
+import { FaGithub } from "react-icons/fa";
+import { MdOpenInBrowser } from "react-icons/md";
+
 import "./Projects.css";
 
 export default function Projects() {
@@ -17,18 +20,48 @@ export default function Projects() {
     });
   }
   return (
-    <div style={{ maxWidth: "1250px", marginTop: "-74px" }} class="row mx-auto">
-      <div class="portfolio_item col-md-6 col-sm-6 p-2">
+    <div style={{ maxWidth: "1250px" }} class="row mx-auto p-3">
+      <div delay="3" class="portfolio_item col-md-6 col-sm-6 p-4">
         <div class="container container-monitor">
           <div class="screen monitor img-fluid">
-            <img alt="blah" width="100%" height="100%" src={weather}></img>
+            <a href="https://serene-mayer-ab963a.netlify.com">
+              <img alt="blah" width="100%" height="100%" src={weather}></img>
+              <div class="overlay">
+                <div class="text">
+                  {" "}
+                  <h1>
+                    <a href="https://github.com/stevenkeezer/weatherAppReact">
+                      <FaGithub className="circle-icon" />
+                    </a>
+                    <a href="https://serene-mayer-ab963a.netlify.com">
+                      <MdOpenInBrowser className="circle-icon" />
+                    </a>
+                  </h1>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      <div class="portfolio_item col-md-6 col-sm-6 p-2">
+      <div class="portfolio_item col-md-6 col-sm-6 p-4">
         <div class="container container-monitor">
           <div class="screen monitor img-fluid">
-            <img alt="blah" width="100%" height="100%" src={movie}></img>
+            <a href="https://dreamy-galileo-9fd758.netlify.com">
+              <img alt="blah" width="100%" height="100%" src={movie}></img>
+              <div class="overlay">
+                <div class="text">
+                  {" "}
+                  <h1>
+                    <a href="https://github.com/stevenkeezer/imdbclone">
+                      <FaGithub className="circle-icon" />
+                    </a>
+                    <a href="https://dreamy-galileo-9fd758.netlify.com">
+                      <MdOpenInBrowser className="circle-icon" />
+                    </a>
+                  </h1>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

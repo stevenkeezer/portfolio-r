@@ -7,12 +7,12 @@
 }
 
 .card-block img:hover {
-  transition: transform 0.4s;
+  transition: transform 0.22s;
   transform: scale(0.98);
 }
 
 .card-block img {
-  transition: transform 0.4s;
+  transition: transform 0.22s;
 }
 
 .text-left {

@@ -15,12 +15,17 @@ export default function ServiceImages() {
     justifyContent: "center",
     top: "0",
     left: "61.1%",
-    width: "100%"
+    width: "100%",
+    transition: "-webkit-transform .5s linear"
   };
   const desc = {};
 
+  const posAbs = {
+    position: "absolute"
+  };
+
   useScrollPosition(({ prevPos, currPos }) => {
-    if (currPos.y < -3283 && currPos.y > -4463) {
+    if (currPos.y < -3283 && currPos.y > -4663) {
       setServiceSection(true);
     } else {
       setServiceSection(false);
@@ -36,9 +41,9 @@ export default function ServiceImages() {
   });
 
   useScrollPosition(({ prevPos, currPos }) => {
-    if (currPos.y <= -4400) {
+    if (currPos.y < -4400) {
       setReactSection(true);
-    } else if (currPos.y >= -4500) {
+    } else {
       setReactSection(false);
     }
   });
@@ -60,7 +65,7 @@ export default function ServiceImages() {
             {/* <h1 style={{ color: "white" }}>Services</h1> */}
 
             {!uiSection && (
-              <div>
+              <div style={serviceSection ? posAbs : desc}>
                 <h3 style={{ color: "white" }}>UI Design</h3>
 
                 <p style={{ color: "white" }}>
@@ -70,32 +75,30 @@ export default function ServiceImages() {
                 </p>
               </div>
             )}
-            <FadeProps animationLength="1300">
-              {uiSection && !reactSection && (
-                <div>
-                  <h3 style={{ color: "white" }}>React & Applications</h3>
 
-                  <p style={{ color: "white" }}>
-                    I work with owners to display your product in the best light
-                    possible. This means having a Design that's both functional
-                    and captures the eyes of your audience.
-                  </p>
-                </div>
-              )}
-            </FadeProps>
-            <FadeProps animationLength="1300">
-              {reactSection && (
-                <div>
-                  <h3 style={{ color: "white" }}>Backend Database API</h3>
+            {uiSection && !reactSection && (
+              <div style={!serviceSection ? posAbs : desc}>
+                <h3 style={{ color: "white" }}>React & Applications</h3>
 
-                  <p style={{ color: "white" }}>
-                    I work with owners to display your product in the best light
-                    possible. This means having a Design that's both functional
-                    and captures the eyes of your audience.
-                  </p>
-                </div>
-              )}
-            </FadeProps>
+                <p style={{ color: "white" }}>
+                  I work with owners to dispsadfasdfsadfasdf. This means having
+                  a Design that's both functional and captures the eyes of your
+                  audience.
+                </p>
+              </div>
+            )}
+
+            {reactSection && (
+              <div>
+                <h3 style={{ color: "white" }}>Backend Database API</h3>
+
+                <p style={{ color: "white" }}>
+                  I work with owners to display your product in the best light
+                  possible. This means having a Design that's both functional
+                  and captures the eyes of your audience.
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

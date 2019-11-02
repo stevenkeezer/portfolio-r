@@ -96,15 +96,6 @@ ul.social-network li {
   transition: all 0.2s;
 }
 
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #f9f9f9;
+.social-network h1 {
+  margin-top: 10px;
 }
