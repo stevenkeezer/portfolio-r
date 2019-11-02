@@ -4,21 +4,22 @@ import "./Introduction.css";
 export default function Introduction() {
   return (
     <div className="grimIam">
-      <p style={{ marginRight: "1.2%", marginBottom: "0px" }}>I </p>
+      <p style={{ marginRight: ".8%", marginBottom: "0px" }}>I </p>
       <b>
         <div className="innerIam">
           Build
           <br />
-          <div style={{ paddingRight: "1.2%", fontSize: "37px" }}>Break</div>
+          <span style={{ paddingRight: "1.5%", fontSize: "37px" }}>Break</span>
           <br />
           Make
           <br />
           Build
           <br />
-          Break
+          <span style={{ paddingRight: "1.5%", fontSize: "37px" }}>Break</span>
+          <br />
         </div>
       </b>
-      <p className="pl-1 m-0">Stuff </p>
+      <p className="pl-2 m-0"> Stuff </p>
       <br></br>
       <h1
         style={{
