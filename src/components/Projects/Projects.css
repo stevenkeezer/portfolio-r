@@ -359,6 +359,9 @@
   .text {
     left: 11%;
   }
+  .project-container {
+    padding: 10px !important;
+  }
 }
 
 .project-container {
