@@ -13,7 +13,7 @@ export default function Introduction() {
           <br />
           <span
             className="break1"
-            style={{ paddingRight: "1.5%", fontSize: "37px!" }}
+            style={{ paddingRight: "1.5%", fontSize: "36px!" }}
           >
             Break
           </span>
@@ -24,7 +24,7 @@ export default function Introduction() {
           <br />
           <span
             className="break1"
-            style={{ paddingRight: "1.5%", fontSize: "37px" }}
+            style={{ paddingRight: "1.5%", fontSize: "36px" }}
           >
             Break
           </span>

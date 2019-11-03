@@ -203,10 +203,13 @@
     font-size: 28px !important;
   }
   .i {
-    margin-right: 2.5% !important;
+    margin-right: 2.9% !important;
   }
   .stuff {
-    padding-left: 2%;
+    padding-left: 2.5% !important;
+  }
+  .grimIam p {
+    font-size: 31px !important;
   }
 }
 
