@@ -256,14 +256,13 @@ hr {
 }
 
 @media (max-width: 610px) {
-
   .heading-container {
-    padding-left: 8.2% !important;
+    padding-left: 2.2% !important;
     margin-top: 30px;
   }
   .contact-list {
     width: 500px !important;
-    margin-left: -80px;
+    margin-left: -55px;
   }
   .form-horizontal {
     width: 100%;

@@ -185,8 +185,9 @@
     font-size: 30px;
   }
   .grimIam h1 {
-    font-size: 30px !important;
-    width: 350px !important;
+    padding-top: 30px;
+    font-size: 26px !important;
+    width: 300px !important;
   }
 
   .break1 {
