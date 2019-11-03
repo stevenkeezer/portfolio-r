@@ -4,7 +4,7 @@ import "./Introduction.css";
 export default function Introduction() {
   return (
     <div className="grimIam">
-      <p className="i" style={{ marginRight: ".8%", marginBottom: "0px" }}>
+      <p className="i" style={{ marginBottom: "0px" }}>
         I{" "}
       </p>
       <b>
@@ -31,7 +31,7 @@ export default function Introduction() {
           <br />
         </div>
       </b>
-      <p className="pl-2 m-0"> Stuff </p>
+      <p className="stuff m-0"> Stuff </p>
       <br></br>
       <h1
         style={{

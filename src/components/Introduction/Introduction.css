@@ -182,7 +182,7 @@
 
 @media (max-width: 759px) {
   .grimIam {
-    font-size: 30px;
+    font-size: 29px;
   }
   .grimIam h1 {
     padding-top: 30px;
@@ -203,6 +203,13 @@
     font-size: 28px !important;
   }
   .i {
-    margin-right: 2.8% !important;
+    margin-right: 2.5% !important;
   }
+  .stuff {
+    padding-left: 2%;
+  }
+}
+
+.stuff {
+  padding-left: 0.7%;
 }
