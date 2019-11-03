@@ -188,4 +188,20 @@
     font-size: 30px !important;
     width: 370px !important;
   }
+
+  .break1 {
+    font-size: 30px !important;
+  }
+}
+
+.break1 {
+  font-size: 38px;
+}
+@media (max-width: 759px) {
+  .break1 {
+    font-size: 28px !important;
+  }
+  .i {
+    margin-right: 2% !important;
+  }
 }

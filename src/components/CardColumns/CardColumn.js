@@ -6,6 +6,7 @@ import blueYeeum from "./blueYeeum.png";
 import blueCell from "./blueCell.png";
 import greenTwitter from "./greenTwitter.png";
 import purple from "./purple.jpeg";
+import pinkPhone from "./pinkPhone.png";
 import cpu from "./goran-ivos-ly-RWaR0GXI-unsplash.jpg";
 
 import "./CardColumn.css";
