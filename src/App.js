@@ -53,7 +53,6 @@ function App() {
   });
 
   useScrollPosition(({ prevPos, currPos }) => {
-    console.log(currPos.y);
     if (currPos.y < -3694) {
       setFadeOutText(true);
     } else {
