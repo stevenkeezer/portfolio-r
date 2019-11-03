@@ -195,11 +195,11 @@
 }
 
 .break1 {
-  font-size: 38px;
+  font-size: 37px;
 }
 @media (max-width: 759px) {
   .break1 {
-    font-size: 28px !important;
+    font-size: 27px !important;
   }
   .i {
     margin-right: 2% !important;
