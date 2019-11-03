@@ -10,23 +10,25 @@ function SideDrawer(props) {
   }
   return (
     <nav className={drawerClasses}>
-      <h3
-        style={{
-          color: "white",
-          padding: "10%",
-          fontWeight: "bold",
-          fontSize: "1.75rem",
-          paddingLeft: "13%"
-        }}
-      >
-        SGK
-      </h3>
+      <Link to={"/"}>
+        <h3
+          style={{
+            color: "white",
+            padding: "10%",
+            fontWeight: "bold",
+            fontSize: "1.75rem",
+            paddingLeft: "13%"
+          }}
+        >
+          SGK
+        </h3>
+      </Link>
       <ul>
         <li>
-          <Link to={"/contact"}>About</Link>
+          <Link to={"/about"}>About</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to={"/contact"}>Contact</Link>
         </li>
         <div className="subDesc">
           <p>UI Design</p>
@@ -34,7 +36,9 @@ function SideDrawer(props) {
           <p>Style and Innovation</p>
         </div>
 
-        <button>Get In Touch</button>
+        <Link to={"/contact"}>
+          <button>Get In Touch</button>
+        </Link>
       </ul>
       <p className="email">E: stevengkeezer@gmail.com</p>
     </nav>

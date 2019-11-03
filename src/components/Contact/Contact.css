@@ -15,14 +15,25 @@
   padding-top: 6%;
 }
 .talk {
-  color: grey;
+  color: #a5a7ac;
 }
 
 .contact-container button {
-  background-color: #333;
+  background-color: #323232;
   color: white;
   width: 165px;
   height: 60px;
   outline: none;
   margin-top: 4%;
+  border: 1px solid black;
+}
+
+.projectButton:active {
+  background-color: black;
+  color: white;
+}
+
+.projectButton:hover {
+  background-color: black;
+  color: white;
 }

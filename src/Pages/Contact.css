@@ -1,3 +1,6 @@
+.col-sm-12 {
+  padding: 0px;
+}
 #contact {
   width: 100%;
   height: 100vh;
@@ -9,7 +12,6 @@
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding-top: 50px;
   margin-bottom: 50px;
   font: 300 60px "Oswald", sans-serif;
   letter-spacing: 6px;
@@ -27,6 +29,7 @@
 /* Begin Left Contact Page */
 .form-horizontal {
   float: left;
+  width: 400px;
   max-width: 400px;
   font-family: "Lato";
   font-weight: 400;
@@ -35,34 +38,29 @@
 .form-control,
 textarea {
   max-width: 400px;
-  background-color: #111;
-  color: #fff;
+  color: grey;
   letter-spacing: 1px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
 }
 
 .send-button {
   margin-top: 15px;
   height: 34px;
-  width: 400px;
+  width: 100px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
-}
-
-.button {
-  width: 400px;
-  height: 34px;
-  transition: all 0.2s ease-in-out;
+  outline: none !important;
+  border-radius: 0.2rem;
 }
 
 .send-text {
   display: block;
-  margin-top: 10px;
   font: 300 14px "Lato", sans-serif;
   letter-spacing: 2px;
-}
-
-.button:hover {
-  transform: translate3d(0px, -29px, 0px);
 }
 
 /* Begin Right Contact Page */
@@ -91,17 +89,20 @@ textarea {
 }
 
 .place {
-  margin-left: 62px;
+  margin-left: 26px;
 }
 
 .phone {
-  margin-left: 56px;
+  margin-left: 26px;
 }
 
 .gmail {
-  margin-left: 53px;
+  margin-left: 26px;
 }
 
+.contact-icon {
+  margin-bottom: 8px !important;
+}
 .contact-text a {
   color: #bbb;
   text-decoration: none;
@@ -119,6 +120,7 @@ textarea {
   font-size: 2.3rem;
   text-align: center;
   width: 100%;
+  padding-left: 20px;
 }
 
 .social-media-list li a {
@@ -136,9 +138,10 @@ textarea {
   line-height: 70px;
   border-radius: 50%;
   color: #fff;
-  background-color: rgb(27, 27, 27);
+  background-color: grey;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  margin: 1%;
 }
 
 .social-media-list li:after {
@@ -256,4 +259,11 @@ hr {
   .send-button {
     width: 99%;
   }
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 22.2%;
 }

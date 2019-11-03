@@ -8,17 +8,30 @@ export default function Service() {
       <div
         style={{
           backgroundColor: "black",
-          height: "260vh",
-          width: "50vw"
+          height: "100vh",
+          height: "100%",
+          width: "50vw",
+          display: "block",
+          paddingTop: "10%",
+          paddingBottom: "10%"
         }}
-        className=""
+        className="service-container"
       >
         <div className="row h-100">
           <div className="col-lg-12 my-auto ">
-            <div className="service-images mx-auto ">
-              <img className=" p-5 " src="https://picsum.photos/362/500"></img>
-              <img className=" p-5 " src="https://picsum.photos/361/500"></img>
-              <img className=" p-5 " src="https://picsum.photos/363/500"></img>
+            <div className="service-images pt-5 pb-5 mx-auto ">
+              <img
+                className="img-fluid p-5 "
+                src="https://picsum.photos/362/500"
+              ></img>
+              <img
+                className="img-fluid p-5 "
+                src="https://picsum.photos/361/500"
+              ></img>
+              <img
+                className="img-fluid p-5 "
+                src="https://picsum.photos/363/500"
+              ></img>
             </div>
           </div>
         </div>

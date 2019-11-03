@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Toolbar from "./components/Toolbar/Toolbar";
-import SideDrawer from "./components/SideDrawer/SideDrawer";
-import Backdrop from "./components/Backdrop/Backdrop";
-import ScrollAnimation from "react-animate-on-scroll";
-import Service from "./components/MService/Service";
-import ServiceImages from "./components/MService/ServiceImages";
-import CardColumn from "./components/CardColumns/CardColumn";
-import Projects from "./components/Projects/Projects";
-import MainFooter from "./components/Footer/MainFooter";
-import Contact from "./components/Contact/Contact";
-import ContactPage from "./Pages/ContactPage";
-import { Container } from "react-bootstrap";
-import Headroom from "react-headroom";
 import Introduction from "./components/Introduction/Introduction";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import CardColumn from "./components/CardColumns/CardColumn";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import MainFooter from "./components/Footer/MainFooter";
+import { StickyContainer, Sticky } from "react-sticky";
+import Backdrop from "./components/Backdrop/Backdrop";
+import ScrollAnimation from "react-animate-on-scroll";
+import Projects from "./components/Projects/Projects";
+import Service from "./components/MService/Service";
+import Toolbar from "./components/Toolbar/Toolbar";
+import Contact from "./components/Contact/Contact";
 import { Route, Switch } from "react-router-dom";
+import ContactPage from "./Pages/ContactPage";
+import { Container } from "react-bootstrap";
+import AboutPage from "./Pages/AboutPage";
+import Headroom from "react-headroom";
 import "./App.css";
 
 function App() {
   const [sideDrawerOpen, isSideDrawerOpen] = useState(false);
   const [NavColor, setNavColor] = useState(false);
+  const [fadeOutText, setFadeOutText] = useState(false);
 
   const drawerToggleClickHandler = () => {
     isSideDrawerOpen(!sideDrawerOpen);
@@ -50,6 +52,15 @@ function App() {
     }
   });
 
+  useScrollPosition(({ prevPos, currPos }) => {
+    console.log(currPos.y);
+    if (currPos.y < -3694) {
+      setFadeOutText(true);
+    } else {
+      setFadeOutText(false);
+    }
+  });
+
   return (
     <Container
       fluid
@@ -57,7 +68,9 @@ function App() {
       className="App main-container"
     >
       <Switch>
+        <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
+
         <Route path="/">
           <Headroom>
             <Toolbar drawerClickHandler={drawerToggleClickHandler} />
@@ -84,11 +97,53 @@ function App() {
               <ScrollAnimation animateIn="fadeInLeft">
                 <Service />
               </ScrollAnimation>{" "}
-              <ServiceImages />
+              <StickyContainer>
+                <Sticky>
+                  {({ style }) => (
+                    <div style={style} className="stickyEl">
+                      {!fadeOutText && (
+                        <div>
+                          <h1 style={{ fontSize: "40px" }}>Services</h1>
+                          <br></br>
+                          <h3>UI Design</h3>
+
+                          <p style={{}}>
+                            I work with owners to display your product in the
+                            best
+                            <br></br>
+                            light possible. This means having a Design that's
+                            both
+                            <br></br>
+                            functional and captures the eyes of your audience.
+                          </p>
+                        </div>
+                      )}
+
+                      {fadeOutText && (
+                        <div>
+                          <h3>React & Applications</h3>
+
+                          <p>
+                            React products provide a flexible inuitive User
+                            Interface
+                            <br></br>
+                            designed to stand out to your users. React is the
+                            ideal
+                            <br></br>
+                            solution for the modern web application.
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </Sticky>
+              </StickyContainer>
             </div>
           </section>
           <section>
-            <Contact />
+            <ScrollAnimation animateIn="fadeIn">
+              <Contact />
+            </ScrollAnimation>{" "}
             <MainFooter />
           </section>
         </Route>

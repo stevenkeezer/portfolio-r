@@ -41,11 +41,13 @@
 }
 
 .sideDrawer button {
-  height: 13%;
+  font-size: 17px;
+  height: 80%;
   width: 60%;
   background-color: transparent;
   color: white;
   margin-top: 10%;
+  outline: none;
 }
 
 .sideDrawer p {
@@ -62,9 +64,4 @@
 
 .sideDrawer .subDesc {
   margin-top: 5%;
-}
-@media (min-width: 769px) {
-  /* .sideDrawer {
-    display: none;
-  } */
 }

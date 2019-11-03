@@ -4,6 +4,7 @@
   font: normal 40px/50px Arial, sans-serif;
   color: #999;
 }
+
 .grimIam p {
   height: 50px;
   float: left;
@@ -185,6 +186,6 @@
   }
   .grimIam h1 {
     font-size: 30px !important;
-    width: 320px !important;
+    width: 370px !important;
   }
 }

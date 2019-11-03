@@ -1,0 +1,65 @@
+.col-md-6 {
+  padding: 0px !important;
+}
+.portfolio {
+  padding: 6%;
+  text-align: center;
+}
+.heading {
+  background: #fff;
+  padding: 1%;
+  text-align: left;
+  /* border: 2px solid rgb(0, 0, 0, 0.2); */
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.heading img {
+  width: 10%;
+}
+.bio-info {
+  padding: 5%;
+  background: #fff;
+  /* border-left: 2px solid rgb(0, 0, 0, 0.2);
+  border-right: 2px solid rgb(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgb(0, 0, 0, 0.2); */
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 4px 2px -2px gray;
+}
+.name {
+  font-family: "Charmonman", cursive;
+  font-weight: 600;
+}
+.bio-image {
+  text-align: center;
+}
+.bio-image img {
+  border-radius: 50%;
+}
+.bio-content {
+  text-align: left;
+}
+.bio-content p {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.workBtn {
+  width: 110px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  outline: 0 !important;
+}
+
+.hireBtn {
+  width: 110px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  outline: 0 !important;
+}

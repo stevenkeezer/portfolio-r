@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Toolbar from "../components/Toolbar/Toolbar.js";
+import ScrollAnimation from "react-animate-on-scroll";
+import ToolbarW from "../components/Toolbar/ToolbarW.js";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
 import Backdrop from "../components/Backdrop/Backdrop";
 import Headroom from "react-headroom";
@@ -8,8 +9,10 @@ import {
   FaLinkedin,
   FaFacebookSquare,
   FaStackOverflow,
-  FaTwitterSquare
+  FaTwitterSquare,
+  FaPhone
 } from "react-icons/fa";
+import { MdLocationOn, MdEmail } from "react-icons/md";
 import "../Pages/Contact.css";
 
 export default function ContactPage() {
@@ -22,123 +25,128 @@ export default function ContactPage() {
   const backdropClickHandler = () => {
     isSideDrawerOpen(false);
   };
+
   return (
     <section id="contact">
       <Headroom>
-        <Toolbar drawerClickHandler={drawerToggleClickHandler} />
+        <ToolbarW drawerClickHandler={drawerToggleClickHandler} />
       </Headroom>
       <SideDrawer show={sideDrawerOpen} />
       {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
+      <ScrollAnimation animateOnce={true} duration={1} animateIn="fadeIn">
+        <div className="heading-container">
+          <h2 style={{ color: "grey", fontSize: "20px" }}>Contact</h2>
+          <h1 style={{ color: "black", fontSize: "35px" }}>Your Project</h1>
+          <h1 style={{ color: "black", fontSize: "35px" }}>
+            Let's Get started
+          </h1>
+        </div>
 
-      <h1 class="section-header">CONTACT</h1>
-
-      <div class="contact-wrapper">
-        <div
-          class="form-horizontal"
-          role="form"
-          method="post"
-          action="contact.php"
-        >
-          <div class="form-group">
-            <div class="col-sm-12">
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="NAME"
-                name="name"
-                value=""
-              ></input>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="col-sm-12">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="EMAIL"
-                name="email"
-                value=""
-              ></input>
-            </div>
-          </div>
-
-          <textarea
-            class="form-control"
-            rows="10"
-            placeholder="MESSAGE"
-            name="message"
-          ></textarea>
-
-          <button
-            class="btn btn-primary send-button"
-            id="submit"
-            type="submit"
-            value="SEND"
+        <div class="contact-wrapper">
+          <div
+            class="form-horizontal"
+            role="form"
+            method="post"
+            action="contact.php"
           >
-            <div class="button">
-              <i class="fa fa-paper-plane"></i>
-              <span class="send-text">SEND</span>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="NAME"
+                  name="name"
+                ></input>
+              </div>
             </div>
-          </button>
-        </div>
 
-        <div class="direct-contact-container">
-          <ul class="contact-list">
-            <li class="list-item">
-              <FaGithub font-size="32px" />
-              <span class="contact-text place">SF | CA</span>
-            </li>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="EMAIL"
+                  name="email"
+                ></input>
+              </div>
+            </div>
 
-            <li class="list-item">
-              <FaGithub font-size="32px" />
-              <span class="contact-text phone">
-                <a href="tel:1-212-555-5555" title="Give me a call">
-                  (212) 555-2368
+            <textarea
+              class="form-control"
+              rows="10"
+              placeholder="MESSAGE"
+              name="message"
+            ></textarea>
+            <div className="button-container">
+              <button
+                class="send-button"
+                id="submit"
+                type="submit"
+                value="SEND"
+              >
+                <div class="">
+                  <i class="fa fa-paper-plane"></i>
+                  <span class="send-text">SEND</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="direct-contact-container">
+            <ul class="contact-list">
+              <li class="list-item">
+                <MdLocationOn font-size="32px" />
+                <span class="contact-text place">SF | CA</span>
+              </li>
+
+              <li class="list-item">
+                <FaPhone font-size="32px" />
+                <span class="contact-text phone">
+                  <a href="tel:1-212-555-5555" title="Give me a call">
+                    (212) 555-2368
+                  </a>
+                </span>
+              </li>
+
+              <li class="list-item">
+                <MdEmail font-size="32px" />
+                <span class="contact-text gmail">
+                  <a href="mailto:#" title="Send me an email">
+                    stevengkeezer@gmail.com
+                  </a>
+                </span>
+              </li>
+            </ul>
+
+            <hr></hr>
+            <ul class="social-media-list">
+              <li>
+                <a href="#" target="_blank">
+                  <FaLinkedin class="contact-icon" />
                 </a>
-              </span>
-            </li>
-
-            <li class="list-item">
-              <FaGithub font-size="32px" />
-              <span class="contact-text gmail">
-                <a href="mailto:#" title="Send me an email">
-                  stevengkeezer@gmail.com
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <FaFacebookSquare class="contact-icon" />
                 </a>
-              </span>
-            </li>
-          </ul>
-
-          <hr></hr>
-          <ul class="social-media-list">
-            <li>
-              <a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-          <hr></hr>
-
-          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <FaStackOverflow class="contact-icon" />{" "}
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <FaGithub className="contact-icon" />{" "}
+                </a>
+              </li>
+            </ul>
+            <hr></hr>
+          </div>
         </div>
-      </div>
+      </ScrollAnimation>{" "}
     </section>
   );
 }

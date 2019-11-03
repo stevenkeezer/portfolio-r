@@ -20,9 +20,9 @@ export default function Projects() {
     });
   }
   return (
-    <div style={{ maxWidth: "1250px" }} class="row mx-auto p-3">
-      <div delay="3" class="portfolio_item col-md-6 col-sm-6 p-4">
-        <div class="container container-monitor">
+    <div style={{ maxWidth: "1280px" }} class="row project-container mx-auto">
+      <div delay="3" class="portfolio_item col-md-6 col-sm-6">
+        <div class="container container-monitor pl-3 pr-3">
           <div class="screen monitor img-fluid">
             <a href="https://serene-mayer-ab963a.netlify.com">
               <img alt="blah" width="100%" height="100%" src={weather}></img>
@@ -43,8 +43,8 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div class="portfolio_item col-md-6 col-sm-6 p-4">
-        <div class="container container-monitor">
+      <div class="portfolio_item col-md-6 col-sm-6 ">
+        <div class="container container-monitor pl-3 pr-3">
           <div class="screen monitor img-fluid">
             <a href="https://dreamy-galileo-9fd758.netlify.com">
               <img alt="blah" width="100%" height="100%" src={movie}></img>

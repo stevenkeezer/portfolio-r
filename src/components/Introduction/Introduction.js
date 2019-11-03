@@ -24,15 +24,15 @@ export default function Introduction() {
       <h1
         style={{
           color: "white",
-          marginTop: "-68px",
-          fontSize: "38px",
-          maxWidth: "700px",
+          marginTop: "-70px",
+          fontSize: "43px",
+          maxWidth: "790px",
           color: "#fff"
         }}
       >
         <br></br>
-        <br></br>Full stack developer focused on design, collaboration and
-        development.
+        <br></br>Full stack developer focused on collaboration, development and
+        design.
       </h1>
     </div>
   );

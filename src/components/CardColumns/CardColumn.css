@@ -3,7 +3,7 @@
   padding-bottom: 120px;
 }
 .card-container {
-  padding: 25px;
+  padding: 40px;
 }
 
 .card-block img:hover {
@@ -16,10 +16,25 @@
 }
 
 .text-left {
-  padding-top: 10px;
-  padding-left: 30px !important;
+  padding-top: 0px;
+  padding-left: 5px !important;
 }
 
+.card-title {
+  padding-top: 4%;
+}
 .card-text {
   color: grey;
+}
+
+@media (min-width: 759px) {
+  .left-cards {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 759px) {
+  .card-container {
+    padding: 15px;
+  }
 }

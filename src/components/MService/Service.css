@@ -3,15 +3,16 @@
   display: flex;
   max-width: 400px;
   flex-direction: column;
+  text-align: left;
 }
 
 .desc-container {
-  margin-top: 200px !important;
+  margin-top: 100px !important;
   margin-bottom: 200px !important;
 }
 
 .service-images {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,4 +21,29 @@
 
 .row {
   padding-top: 0px !important;
+}
+
+@media only screen and (min-width: 260px) and (max-width: 800px) {
+  .service-container {
+    width: 100vw !important;
+  }
+
+  .desc-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 260px) and (max-width: 800px) {
+  .stickyEl {
+    padding-left: 50px !important;
+  }
+}
+.stickyEl {
+  flex-direction: column;
+  min-width: 700px;
+  padding-top: 270px;
+  text-align: left;
+  padding-bottom: 250px;
+  color: white;
+  padding-left: 150px;
 }

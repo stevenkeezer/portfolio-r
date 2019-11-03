@@ -4,9 +4,7 @@
 }
 
 .portfolio_item {
-  margin-bottom: 100px;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-bottom: 15%;
 }
 
 /*CSS for the computer monitor adapted from here: https://codepen.io/willpaige/pen/rFElD*/
@@ -318,8 +316,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  /* top: 40%; */
-  /* background-color: rgba(0, 0, 0, 0.3); */
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -335,7 +331,7 @@
   font-size: 30px;
   position: absolute;
   top: 50%;
-  left: 9%;
+  left: 8%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -349,4 +345,22 @@
   padding: 6px;
   background-color: whitesmoke;
   margin: 3px;
+}
+
+@media (max-width: 559px) {
+  .grimIam {
+    padding: 1em 1em !important;
+  }
+
+  .container:hover .overlay {
+    height: 23%;
+  }
+
+  .text {
+    left: 11%;
+  }
+}
+
+.project-container {
+  padding: 0.5%;
 }
