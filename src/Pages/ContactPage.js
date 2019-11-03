@@ -38,7 +38,7 @@ export default function ContactPage() {
           <h2 style={{ color: "grey", fontSize: "20px" }}>Contact</h2>
           <h1 style={{ color: "black", fontSize: "35px" }}>Your Project</h1>
           <h1 style={{ color: "black", fontSize: "35px" }}>
-            Let's Get started
+            Let's get started
           </h1>
         </div>
 
