@@ -9,7 +9,7 @@ export default function Introduction() {
       </p>
       <b>
         <div className="innerIam">
-          Build
+          <span style={{ paddingLeft: "1px" }}>Build</span>
           <br />
           <span
             className="break1"
@@ -20,7 +20,7 @@ export default function Introduction() {
           <br />
           Make
           <br />
-          Build
+          <span style={{ paddingLeft: "1px" }}>Build</span>
           <br />
           <span
             className="break1"
