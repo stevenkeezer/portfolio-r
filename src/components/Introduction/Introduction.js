@@ -36,7 +36,7 @@ export default function Introduction() {
       <h1
         style={{
           color: "white",
-          marginTop: "-70px",
+          marginTop: "-90px",
           fontSize: "43px",
           maxWidth: "790px",
           color: "#fff"
