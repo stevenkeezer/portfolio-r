@@ -21,20 +21,12 @@ export default function Projects() {
     });
   }
   return (
-    <div style={{ padding: 43 }} class="row project-container  mx-auto">
+    <div style={{ padding: 37 }} class="row project-container  mx-auto">
       <div delay="3" class="portfolio_item col-md-6 col-sm-6 col-lg-6   ">
         <div class="container container-monitor pl-3 pr-3 ">
           <div class="screen monitor shadow-lg img-fluid">
             <a href="https://github.com/stevenkeezer/yeeeum-rn">
-              <img
-                alt="blah"
-                width="100%"
-                // height="100%"
-                style={{
-                  marginTop: "0px"
-                }}
-                src={react}
-              ></img>
+              <img alt="blah" width="100%" src={react}></img>
               <div class="overlay">
                 <div class="text">
                   {" "}
@@ -56,7 +48,11 @@ export default function Projects() {
         <div class="container container-monitor pl-3 pr-3">
           <div class="screen monitor shadow-lg img-fluid">
             <a href="https://yeeeum.com">
-              <img alt="blah" width="100%" height="100%" src={yeeeum}></img>
+              <img
+                alt="blah"
+                style={{ maxHeight: "100", maxWidth: "100%" }}
+                src={yeeeum}
+              ></img>
               <div class="overlay">
                 <div class="text">
                   {" "}
