@@ -1,6 +1,7 @@
 import React from "react";
 import movie from "./movieApp.png";
-import weather from "./weatherApp.png";
+import react from "./react.png";
+import yeeeum from "./yeeeum.png";
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInBrowser } from "react-icons/md";
 
@@ -20,20 +21,28 @@ export default function Projects() {
     });
   }
   return (
-    <div style={{ maxWidth: "1280px" }} class="row project-container mx-auto">
-      <div delay="3" class="portfolio_item col-md-6 col-sm-6">
-        <div class="container container-monitor pl-3 pr-3">
-          <div class="screen monitor img-fluid">
-            <a href="https://serene-mayer-ab963a.netlify.com">
-              <img alt="blah" width="100%" height="100%" src={weather}></img>
+    <div style={{ padding: 43 }} class="row project-container  mx-auto">
+      <div delay="3" class="portfolio_item col-md-6 col-sm-6 col-lg-6   ">
+        <div class="container container-monitor pl-3 pr-3 ">
+          <div class="screen monitor shadow-lg img-fluid">
+            <a href="https://github.com/stevenkeezer/yeeeum-rn">
+              <img
+                alt="blah"
+                width="100%"
+                // height="100%"
+                style={{
+                  marginTop: "0px"
+                }}
+                src={react}
+              ></img>
               <div class="overlay">
                 <div class="text">
                   {" "}
                   <h1>
-                    <a href="https://github.com/stevenkeezer/weatherAppReact">
+                    <a href="https://github.com/stevenkeezer/yeeeum-rn">
                       <FaGithub className="circle-icon" />
                     </a>
-                    <a href="https://serene-mayer-ab963a.netlify.com">
+                    <a href="https://github.com/stevenkeezer/yeeeum-rn">
                       <MdOpenInBrowser className="circle-icon" />
                     </a>
                   </h1>
@@ -45,9 +54,9 @@ export default function Projects() {
       </div>
       <div class="portfolio_item col-md-6 col-sm-6 ">
         <div class="container container-monitor pl-3 pr-3">
-          <div class="screen monitor img-fluid">
-            <a href="https://dreamy-galileo-9fd758.netlify.com">
-              <img alt="blah" width="100%" height="100%" src={movie}></img>
+          <div class="screen monitor shadow-lg img-fluid">
+            <a href="https://yeeeum.com">
+              <img alt="blah" width="100%" height="100%" src={yeeeum}></img>
               <div class="overlay">
                 <div class="text">
                   {" "}
@@ -55,7 +64,7 @@ export default function Projects() {
                     <a href="https://github.com/stevenkeezer/imdbclone">
                       <FaGithub className="circle-icon" />
                     </a>
-                    <a href="https://dreamy-galileo-9fd758.netlify.com">
+                    <a href="https://yeeeum.com">
                       <MdOpenInBrowser className="circle-icon" />
                     </a>
                   </h1>

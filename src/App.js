@@ -17,6 +17,8 @@ import ContactPage from "./Pages/ContactPage";
 import { Container } from "react-bootstrap";
 import AboutPage from "./Pages/AboutPage";
 import Headroom from "react-headroom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+
 import "./App.css";
 
 function App() {
@@ -98,6 +100,12 @@ function App() {
               </ScrollAnimation>{" "}
               <StickyContainer>
                 <Sticky>
+                  {/* <TransitionGroup
+                    transitionName="example"
+                    transitionEnterTimeout={500}
+                    transitionLeaveTimeout={300}
+                    className="TodoContainer"
+                  > */}
                   {({ style }) => (
                     <div style={style} className="stickyEl">
                       {!fadeOutText && (
@@ -135,6 +143,8 @@ function App() {
                       )}
                     </div>
                   )}
+                  {/* <h1>ss</h1>
+                  </TransitionGroup> */}
                 </Sticky>
               </StickyContainer>
             </div>
@@ -142,7 +152,7 @@ function App() {
           <section>
             <ScrollAnimation animateIn="fadeIn">
               <Contact />
-            </ScrollAnimation>{" "}
+            </ScrollAnimation>
             <MainFooter />
           </section>
         </Route>

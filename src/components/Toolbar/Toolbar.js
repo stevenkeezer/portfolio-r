@@ -20,6 +20,7 @@ function Toolbar(props) {
   };
 
   useScrollPosition(({ prevPos, currPos }) => {
+    console.log(currPos.y);
     if (currPos.y < -95) {
       setNavColor(true);
     } else if (currPos.y > -55) {
