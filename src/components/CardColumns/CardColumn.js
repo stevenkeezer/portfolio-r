@@ -21,7 +21,7 @@ import "./CardColumn.css";
 export default function CardColumn() {
   return (
     <div class="card-container">
-      <div class="row mx-auto">
+      <div class="row mx-auto" style={{ padding: "13px" }}>
         <div class="col-md-6">
           <div class="card w-100">
             <div class="card-block left-cards">
