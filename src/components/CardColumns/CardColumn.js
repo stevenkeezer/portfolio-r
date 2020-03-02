@@ -27,16 +27,20 @@ export default function CardColumn() {
             <div class="card-block left-cards">
               <a href="https://github.com/stevenkeezer/yeeeum-rn">
                 <div
+                  className="text-center img-fluid mx-auto"
                   style={{
                     backgroundImage: `url(${blueBg})`,
-                    padding: 100,
-                    paddingTop: 140,
-                    paddingBottom: 140
+                    paddingTop: "5vw",
+                    paddingBottom: "5vw"
                   }}
                 >
                   <img
+                    className="img-fluid"
                     src={demo}
-                    style={{ width: "50%", borderRadius: "8%" }}
+                    style={{
+                      width: "15vw",
+                      borderRadius: "10%"
+                    }}
                   ></img>
                 </div>
               </a>
@@ -73,9 +77,9 @@ export default function CardColumn() {
             <div class="card-block">
               <a href="https://serene-mayer-ab963a.netlify.com/">
                 <div
-                  style={{ backgroundImage: `url(${greenBg})`, padding: 120 }}
+                  style={{ backgroundImage: `url(${greenBg})`, padding: "10%" }}
                 >
-                  <img class="img-fluid" src={weatherApp}></img>
+                  <img className="img-fluid" src={weatherApp}></img>
                 </div>
               </a>
               <h4 class="card-title text-left">Backend Development</h4>
