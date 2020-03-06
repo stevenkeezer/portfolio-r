@@ -34,22 +34,22 @@ export default function ContactPage() {
       <SideDrawer show={sideDrawerOpen} />
       {sideDrawerOpen && <Backdrop click={backdropClickHandler} />}
       <ScrollAnimation animateOnce={true} duration={1} animateIn="fadeIn">
-        <div className="heading-container">
-          <h2 style={{ color: "grey", fontSize: "20px" }}>Contact</h2>
-          <h1 style={{ color: "black", fontSize: "35px" }}>Your Project</h1>
-          <h1 style={{ color: "black", fontSize: "35px" }}>
-            Let's get started
-          </h1>
-        </div>
-
         <div class="contact-wrapper">
+          <div className="sub-contact-wrapper">
+            <h2 style={{ color: "grey", fontSize: "20px" }}>Contact</h2>
+            <h1 style={{ color: "black", fontSize: "35px" }}>Your Project</h1>
+            <h1 style={{ color: "black", fontSize: "35px" }}>
+              Let's get started
+            </h1>
+          </div>
           <div
             class="form-horizontal"
             role="form"
             method="post"
             action="contact.php"
+            style={{ marginTop: "5%" }}
           >
-            <div class="form-group">
+            <div class="form-group ">
               <div class="col-sm-12">
                 <input
                   type="text"

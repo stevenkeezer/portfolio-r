@@ -280,4 +280,12 @@ hr {
   .social-media-list {
     padding-left: 0px !important;
   }
+  .contact-wrapper {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .sub-contact-wrapper {
+    padding-left: 30px;
+  }
 }

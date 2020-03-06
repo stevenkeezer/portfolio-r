@@ -1,7 +1,7 @@
 import React from "react";
 import movie from "./movieApp.png";
 import react from "./react.png";
-import yeeeum from "./yeeeum.png";
+import yeeeum from "./yeeeum2.png";
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInBrowser } from "react-icons/md";
 
