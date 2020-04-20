@@ -4,7 +4,7 @@ import react from "./react.png";
 import yeeeum from "./yeeeum2.png";
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInBrowser } from "react-icons/md";
-
+import tv from "./tv.png";
 import "./Projects.css";
 
 export default function Projects() {

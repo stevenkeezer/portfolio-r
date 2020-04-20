@@ -31,7 +31,7 @@ export default function CardColumn() {
                   style={{
                     backgroundImage: `url(${blueBg})`,
                     paddingTop: "5vw",
-                    paddingBottom: "5vw"
+                    paddingBottom: "5vw",
                   }}
                 >
                   <img
@@ -39,7 +39,7 @@ export default function CardColumn() {
                     src={demo}
                     style={{
                       width: "15vw",
-                      borderRadius: "10%"
+                      borderRadius: "10%",
                     }}
                   ></img>
                 </div>
@@ -75,7 +75,7 @@ export default function CardColumn() {
         <div class="col-md-6 ">
           <div class="card  w-100">
             <div class="card-block">
-              <a href="https://serene-mayer-ab963a.netlify.com/">
+              <a href="https://betterweather.netlify.app/">
                 <div
                   style={{ backgroundImage: `url(${greenBg})`, padding: "10%" }}
                 >
